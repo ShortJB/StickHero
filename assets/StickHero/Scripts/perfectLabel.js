@@ -13,7 +13,7 @@ cc.Class({
     showPerfect(count){
         this.label.string = "Perfect x" + count;
         var fadeInAction = cc.fadeIn(0.1);
-        var moveAction = cc.moveBy(1,cc.p(0,0));
+        var moveAction = cc.moveBy(1,cc.Vec2(0,0));
         var fadeOutAction = cc.fadeOut(0);
         var seq = cc.sequence(fadeInAction,moveAction,fadeOutAction);
         this.node.runAction(seq);
