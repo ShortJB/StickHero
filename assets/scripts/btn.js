@@ -24,6 +24,6 @@ cc.Class({
         fn.fsm.restart();
     },
     gameStart(){
-        cc.director.loadScene("MainGameScene");
+        cc.director.loadScene("main");
     }
 });

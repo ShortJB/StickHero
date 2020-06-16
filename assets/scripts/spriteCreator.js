@@ -26,7 +26,7 @@ var spriteCreator = (function (){
             sprite.spriteFrame = spriteFrameCache;
             redSprite.spriteFrame = spriteFrameCache;
         }else{
-            cc.loader.loadRes("hero/blank", cc.SpriteFrame, (err, SpriteFrame) => {
+            cc.loader.loadRes("textures/hero/blank", cc.SpriteFrame, (err, SpriteFrame) => {
                 sprite.spriteFrame = SpriteFrame;
                 redSprite.spriteFrame = SpriteFrame;
                 spriteFrameCache = SpriteFrame;

@@ -9,7 +9,7 @@ cc.Class({
     onLoad: function () {
         var randomNum = "bg" + ((Math.random()*100|0)%3+1);
         var bgSprite = this.node.getComponent(cc.Sprite);
-        cc.loader.loadRes("hero/"+randomNum, cc.SpriteFrame, (err, SpriteFrame) => {
+        cc.loader.loadRes("textures/hero/"+randomNum, cc.SpriteFrame, (err, SpriteFrame) => {
             bgSprite.spriteFrame = SpriteFrame;
         });
         cc.log(randomNum);

@@ -116,7 +116,7 @@ cc.Class({
                     gameDirector.overLabel.node.active = true;
                 },
                 onRestart() {
-                    cc.director.loadScene("MainGameScene");
+                    cc.director.loadScene("main");
                 }
             }
         });
